@@ -38,4 +38,39 @@ const navLinks = document.querySelector("nav ul");
 const li = document.createElement("li");
 navLinks.appendChild(li);
 
-// 8 - 
+// 8 - replaceChild
+// TRoca um elemento com base no elemento pai
+const h2 = document.createElement("h2");
+h2.textContent = "Meu Novo título!";
+header.replaceChild(h2, title);
+// Elemento novo e elemento a ser trocado
+
+// 9 - createTextNode
+// Colocar um elemento dentro do outro
+
+const myText = document.createTextNode("Agora vamos colocar mais um título");
+const h3 = document.createElement("h3");
+h3.appendChild(myText);
+mainContainer.appendChild(h3);
+
+// 10 - Trabalhando com os Atributos de Link
+const firstLink = navLinks.querySelector("a");
+
+// Teste 1. Pegamos apenas o primeiro elemento 
+console.log(firstLink);
+
+// Teste 2. Alteramos o atributo href do elemento
+firstLink.setAttribute("href", "https://www.sp.senac.br");
+
+// Teste 3. Capturando o valor do atributo href
+console.log(firstLink.getAttribute("href"));
+
+// Teste 4. Fazendo o atributo abrir uma nova aba
+firstLink.setAttribute("target", "_blank");
+
+// 11 - Posição p Elemento
+mainContainer.style.color = "red";
+
+mainContainer.style.backgroundcolor = "#333";
+
+mainContainer.style.paddingBottom = "15px";
