@@ -18,6 +18,12 @@
 //     secondBtn.removeEventListener("click", imprimirMensagem);
 // });
 
+
+
+
+
+
+//continuação 04-04 Quinta-Feira//
 // const title = doc.querySelector("#my-title");
 // title.addEventListener("click", (event) =>{
 //     console.log(event)
